@@ -37,6 +37,9 @@ body{
     align-items: center;
     text-align: center;
 }
+.no-show{
+    display: none;
+}
 .new h1{
     font-family: 'Playfair Display', serif;
     letter-spacing: 2px;
@@ -121,3 +124,29 @@ body{
     font-weight: 900;
 }
 
+@media (max-width: 390px){
+    #wrapper{
+        display: block;
+        flex-direction: column;
+    }
+    #left{
+        height: 100vh;
+        width: 100%;
+    }
+    #right{
+        display: none;
+    }
+    .input{
+        width: 100%;
+        height: 40px;
+    }
+    .new h1{
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .no-show{
+        display: inline;
+    }
+}
