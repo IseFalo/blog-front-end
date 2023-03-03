@@ -77,6 +77,18 @@ body{
     border: 1px solid black;
 }
 
+.no-show .no-show-button{
+    width: 80%;
+    height: 40px;
+    background-color: black;
+    border: white;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bolder;
+}
+
 #right{
     padding-top: 0;
     display: flex;
@@ -93,6 +105,7 @@ body{
 
 
 
+
 #showcase{
     display: flex;
     flex-direction: column;
@@ -103,6 +116,7 @@ body{
     text-align: center;
     align-items: center;
 }
+
 .showcase-button{
     width: 80%;
     height: 40px;
@@ -126,7 +140,8 @@ body{
     letter-spacing: 2px;
     font-weight: 900;
 }
-@media (max-width: 390px){
+
+@media only screen and (max-width: 390px){
     #wrapper{
         display: block;
         flex-direction: column;
@@ -146,67 +161,111 @@ body{
         font-family: 'Playfair Display', serif;
         letter-spacing: 2px;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 20px;
+    }
+    .new h3{
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .btn{
+        height: 40px;
+        width: 90%;
     }
     .no-show{
         display: inline;
     }
-}
-@media (max-width:300px) {
-    #wrapper{
-        display: block;
-        flex-direction: column;
-    }
-    #left{
-        height: 100vh;
-        width: 100%;
-
-    }
-    #right{
-        display: none;
-    }
-    .input{
-        width: 100px;
+    .no-show .no-show-button{
+        width: 90%;
         height: 30px;
     }
-    .new h1{
-        font-family: 'Playfair Display', serif;
-        letter-spacing: 2px;
-        font-weight: 500;
-        font-size: 18px;
-    }
-    .no-show{
-        display: inline;
-    }
 }
-@media (max-width: 500px){
+
+@media only screen and (min-width:391px) and (max-width: 500px){
     #wrapper{
         display: block;
         flex-direction: column;
     }
     #left{
         height: 100vh;
-        
+        width: 100%;
     }
     #right{
         display: none;
     }
     .input{
-        width: 100%;
-        height: 0px;
+        width: 350px;
+        height: 50px;
     }
     .new h1{
         font-family: 'Playfair Display', serif;
         letter-spacing: 2px;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 30px;
+    }
+    .new h3{
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .btn{
+        height: 50px;
+        width: 90%;
     }
     .no-show{
         display: inline;
+    }
+
+    .no-show .no-show-button{
+        width: 90%;
+        height: 40px;
+    }
+}
+@media only screen and (min-width:501px) and (max-width: 600px){
+    #wrapper{
+        display: block;
+        flex-direction: column;
+    }
+    #left{
+        height: 100vh;
+        width: 100%;
+    }
+    #right{
+        display: none;
+    }
+    .input{
+        width: 400px;
+        height: 50px;
+    }
+    .new h1{
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .new h3{
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .btn{
+        height: 50px;
+        width: 100%;
+    }
+    .no-show{
+        display: inline;
+    }
+
+    .no-show .no-show-button{
+        width: 90%;
+        height: 40px;
     }
 }
 
-@media (max-width:800px){
+@media only screen and (min-width:601px) and (max-width: 850px){
     #wrapper{
         display: block;
         flex-direction: column;
@@ -219,10 +278,25 @@ body{
         display: none;
     }
     .input{
-        width: 500px;
+        width: 600px;
         height: 70px;
     }
+    .input::placeholder{
+        font-size: large;
+    }
     .new h1{
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 40px;
+    }
+    .btn{
+        height: 70px;
+        width: 100%;
+        font-size: large;
+        letter-spacing: 6px;
+    }
+    .new h3{
         font-family: 'Playfair Display', serif;
         letter-spacing: 2px;
         font-weight: 500;
@@ -231,9 +305,15 @@ body{
     .no-show{
         display: inline;
     }
+    .no-show .no-show-button{
+        width: 90%;
+        height: 60px;
+        font-size: large;
+        letter-spacing: 6px;
+    }
 }
 
-@media (max-width:900px) {
+@media only screen and (min-width:851px) and (max-width: 1000px){
     #wrapper{
         display: block;
         flex-direction: column;
@@ -246,16 +326,85 @@ body{
         display: none;
     }
     .input{
-        width: 500px;
-        height: 80px;
+        width: 700px;
+        height: 100px;
+    }
+    .input::placeholder{
+        font-size: x-large;
     }
     .new h1{
         font-family: 'Playfair Display', serif;
         letter-spacing: 2px;
-        font-weight: 700;
-        font-size: 30px;
+        font-weight: 500;
+        font-size: 50px;
+    }
+    .new h3{
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 35px;
+    }
+    .btn{
+        height: 70px;
+        width: 100%;
+        font-size: x-large;
+        letter-spacing: 6px;
     }
     .no-show{
         display: inline;
+    }
+    .no-show .no-show-button{
+        width: 90%;
+        height: 60px;
+        font-size: x-large;
+        letter-spacing: 4px;
+    }
+}
+
+@media only screen and (min-width:1001px) and (max-width: 1050px){
+    #wrapper{
+        display: block;
+        flex-direction: column;
+    }
+    #left{
+        height: 100vh;
+        width: 100%;
+    }
+    #right{
+        display: none;
+    }
+    .input{
+        width: 700px;
+        height: 50px;
+    }
+    .input::placeholder{
+        font-size: x-large;
+    }
+    .new h1{
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 40px;
+    }
+    .new h3{
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 25px;
+    }
+    .btn{
+        height: 70px;
+        width: 100%;
+        font-size: x-large;
+        letter-spacing: 8px;
+    }
+    .no-show{
+        display: inline;
+    }
+    .no-show .no-show-button{
+        width: 100%;
+        height: 60px;
+        font-size: x-large;
+        letter-spacing: 6px;
     }
 }
