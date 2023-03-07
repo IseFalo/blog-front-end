@@ -12,6 +12,9 @@ body{
     font-size: 15px;
 }
 
+.row{
+    height: 50vh;
+}
 .carousel{
     height: 60vh;
 
@@ -27,8 +30,47 @@ body{
 
 #captions{
     background: #cfd1d4;
+    height: 60vh;
 }
-@media (max-width: 800px) {
+#captions h3{
+    font-size: 20px
+}
+
+
+
+@media only screen and (min-width:0px) and (max-width:576px){
+    .nav-item{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .search{
+        margin-top: 10px;
+    }
+    .second-brand{
+        font-size: 15px;
+    }
+    .carousel{
+        height: 100%;
+    
+    }
+    .carousel-item{
+        width: 100%;
+        height: 90vh;
+    }
+    .carousel-item{
+        width: 100%;
+        height: 90vh;
+    }
+    #caro-img{
+        width: 100%;
+        height: 45vh;
+    }
+    #captions{
+        background: #cfd1d4;
+        height: 45vh;
+    }
+}
+@media only screen and (min-width:577px) and (max-width:768px) {
     .nav-item{
         margin-top: 10px;
         margin-left: 0px;
@@ -37,8 +79,24 @@ body{
     .search{
         margin-top: 10px;
     }
+    .carousel{
+        height: 100%;
+        border-radius: 9px;
+    }
+    .carousel-item{
+        width: 100%;
+        height: 70vh;
+    }
+    #caro-img{
+        width: 100%;
+        height: 35vh;
+    }
+    #captions{
+        background: #cfd1d4;
+        height: 35vh;
+    }
 }
-@media only screen and (min-width:801px) and (max-width:1000px) {
+@media only screen and (min-width:769px) and (max-width:992px) {
     .nav-item{
         margin-top: 10px;
         margin-left: 10%;
@@ -46,5 +104,41 @@ body{
     }
     .search{
         margin-top: 10px;
+    }
+    .carousel{
+        height: 100%;
+    
+    }
+    .carousel-item{
+        width: 100%;
+        height: 60vh;
+    }
+    .carousel-item{
+        width: 100%;
+        height: 60vh;
+    }
+    #caro-img{
+        width: 100%;
+        height: 30vh;
+        
+    }
+    #captions{
+        background: #cfd1d4;
+        height: 30vh;
+    }
+}
+
+@media only screen and (min-width:993px) and (max-width:1200px){
+    .carousel{
+        height: 40vh;
+    
+    }
+    .carousel-item{
+        width: 100%;
+        height: 40vh;
+    }
+    .carousel-item{
+        width: 100%;
+        height: 40vh;
     }
 }
