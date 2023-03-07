@@ -1,4 +1,6 @@
-
+body{
+   
+}
 .dropdown-toggle::after{
     display: none;
 }
@@ -7,10 +9,25 @@
     margin-left: 70px;
 }
 .nav-link{
-    font-size: 20px;
+    font-size: 15px;
 }
 
+.carousel{
+    height: 60vh;
 
+}
+.carousel-item{
+    width: 100%;
+    height: 60vh;
+}
+#caro-img{
+    width: 100%;
+    height: 60vh;
+}
+
+#captions{
+    background: #cfd1d4;
+}
 @media (max-width: 800px) {
     .nav-item{
         margin-top: 10px;
