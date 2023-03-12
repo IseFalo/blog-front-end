@@ -34,15 +34,10 @@
                 <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Notifications</a>
               </li>
               <li class="nav-item text-center">
-                <a class="nav-link">Explore</a>
-              </li>
-
-              <li class="nav-item text-center">
                 <div class="dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     More
-                  </a>
-                
+                  </a>              
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li><a class="dropdown-item" href="#">Settings</a></li>
                     <li><a class="dropdown-item" href="#">About</a></li>
@@ -54,6 +49,11 @@
                     <li><a class="dropdown-item" href="#">Logout</a></li>
                   </ul>
                 </div>
+                
+              </li>
+
+              <li class="nav-item text-center">
+                <a class="nav-link">Explore</a>
               </li>
             </ul>
 
@@ -64,7 +64,7 @@
 
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-          <h2 class="offcanvas-title" id="offcanvasExampleLabel">Notifications</h2>
+          <h3 class="offcanvas-title" id="offcanvasExampleLabel">Notifications</h3>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -201,65 +201,65 @@
 
 
 
-    <div class="container-fluid my-5">
-        <div class="row">
-            <div class="col-lg-3 d-none d-md-none d-lg-none d-xl-block justify-content-center">
-                <h1>Trending Posts</h1>
-                <div class="card my-5" style="width: 20rem;">
-                    <img src="images/book.jpg" height="200" class="card-img-top" alt="...">
+    <div class="container my-5">
+        <div class="row" id="row">
+            <div class="col-lg-3 d-none d-md-none d-lg-none d-xl-block" id="col">
+                <h5 class="text-center">Trending Posts</h5>
+                <div class="card my-3" style="width: 250px;" id="trending-card">
+                    <img src="images/book.jpg" height="150" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-outline-dark">Read more</a>
+                      <h6 class="card-title">Card title</h6>
+                      <p class="card-text">Read by 1.5m people this week</p>
+                      <a href="#" class="btn btn-sm btn-outline-dark">View Post</a>
                     </div>
                   </div>
 
-                  <div class="card my-5" style="width: 20rem;">
-                    <img src="images/img2.jpg" height="200" class="card-img-top" alt="...">
+                  <div class="card my-3" style="width: 250px;" id="trending-card">
+                    <img src="images/img2.jpg" height="150" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-outline-dark">Read more</a>
+                      <h6 class="card-title">Card title</h6>
+                      <p class="card-text">Read by 1.5m people this week</p>
+                      <a href="#" class="btn btn-sm btn-outline-dark">View Post</a>
                     </div>
                   </div>
 
-                  <div class="card my-5" style="width: 20rem;">
-                    <img src="images/img6.jpg" height="200" class="card-img-top" alt="...">
+                  <div class="card my-3" style="width: 250px;" id="trending-card">
+                    <img src="images/img6.jpg" height="150" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-outline-dark">Read more</a>
+                      <h6 class="card-title">Card title</h6>
+                      <p class="card-text">Read by 1.5m people this week</p>
+                      <a href="#" class="btn btn-sm btn-outline-dark">View Post</a>
                     </div>
                   </div>
 
-                  <div class="card my-5" style="width: 20rem;">
-                    <img src="images/img6.jpg" height="200" class="card-img-top" alt="...">
+                  <div class="card my-3" style="width: 250px;" id="trending-card">
+                    <img src="images/img6.jpg" height="150" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-outline-dark">Read more</a>
+                      <h6 class="card-title">Card title</h6>
+                      <p class="card-text">Read by 1.5m people this week</p>
+                      <a href="#" class="btn btn-sm btn-outline-dark">View Post</a>
                     </div>
                   </div>
 
-                  <div class="card my-5" style="width: 20rem;">
-                    <img src="images/img6.jpg" height="200" class="card-img-top" alt="...">
+                  <div class="card my-3" style="width: 250px;" id="trending-card">
+                    <img src="images/img6.jpg" height="150" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-outline-dark">Read more</a>
+                      <h6 class="card-title">Card title</h6>
+                      <p class="card-text">Read by 1.5m people this week</p>
+                      <a href="#" class="btn btn-sm btn-outline-dark">View Post</a>
                     </div>
                   </div>
 
                   <hr>
                   <div id="fixedElement">
-                    <h3 class="text-center pt-5">Most Popular Categories</h3>
-                    <div class="card my-5 ms-5" style="width: 350px;">
+                    <h5 class="text-center pt-5">Most Popular Categories</h5>
+                    <div class="card my-3" style="width: 250px;">
                         <div class="card-body">
-                            <h4>1.) Football</h4>
-                            <h4>2.) Music</h4>
-                            <h4>3.) Movies</h4>
-                            <h4>4.) Fashion</h4>
-                            <h4>5.) Politics</h4>
+                            <h6>1.) Football</h6>
+                            <h6>2.) Music</h6>
+                            <h6>3.) Movies</h6>
+                            <h6>4.) Fashion</h6>
+                            <h6>5.) Politics</h6>
                         </div>
                       </div>
                   </div>
@@ -270,15 +270,15 @@
 
 
 
-<div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">         
-    <div class="card text-center">
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-6" id="col">         
+    <div class="card text-center" id="start-post-card">
         <div class="card-header">
             <h5>Create Post</h5>
         </div>
         <div class="card-body">
             <a href="" data-bs-toggle="modal"  data-bs-target="#exampleModalToggle" href="#exampleModalToggle" role="button">
                 <form action="">
-                    <img src="images/link 1.jpg" class="start-post-image" alt="" width="80" height="80" srcset="">
+                    <img src="images/link 1.jpg" class="start-post-image" alt="" srcset="">
                     <input type="text" class="start-post" placeholder="Start a Post">
                 </form>
             </a>
@@ -355,31 +355,6 @@
 
 
 
-<!-- Modal
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Create Post</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        
-          <form action="">
-            <div class="post-form">
-            <input type="text" class="post-title my-3" name="post-title" placeholder="Post title">
-            <input type="file" accept="image/*">
-            <textarea name="" class="post-text-area my-3" placeholder="Talk about something..."></textarea>
-          </div>
-          </form>       
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Add Post</button>
-      </div>
-    </div>
-  </div>
-</div> -->
 
 
 
@@ -396,124 +371,72 @@
 
 
 
-                  <h1 class="text-center mt-5">Subscribed Posts</h1>
-                <div class="card mb-3 my-5">
-                    <div class="card-header">
-                        <h5>@Iseoluwa's Food Blog</h5>
-                    </div>
-                    <img src="images/blog-770x510.png" class="card-img-top" id="feed-post-img" height="500" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Post title (5 mins read)</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <form action="">
-                        <input type="text" placeholder="Add comment..." class="comment">
-                      </form>
-                      <a href="">Comments</a>
-                      <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
-                    </div>
-                  </div>
-
-
-
-                  <div class="card mb-3 my-5">
-                    <div class="card-header">
-                        <h5>@Iseoluwa's Food Blog</h5>
-                    </div>
-                    <img src="images/blog-770x510.png" class="card-img-top" id="feed-post-img" height="500" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Post title (5 mins read)</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <form action="">
-                        <input type="text" placeholder="Add comment..." class="comment">
-                      </form>
-                      <a href="">Comments</a>
-                      <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
-                    </div>
-                  </div>
-
-
-
-                  <div class="card mb-3 my-5">
-                    <div class="card-header">
-                        <h5>@Iseoluwa's Food Blog</h5>
-                    </div>
-                    <img src="images/blog-770x510.png" class="card-img-top" id="feed-post-img"  height="500" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Post title (5 mins read)</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <form action="">
-                        <input type="text" placeholder="Add comment..." class="comment">
-                      </form>
-                      <a href="">Comments</a>
-                      <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
-                    </div>
-                  </div>
-
-                  <div class="card mb-3 my-5">
-                    <div class="card-header">
-                        <h5>@Iseoluwa's Food Blog</h5>
-                    </div>
-                    <img src="images/blog-770x510.png" class="card-img-top" id="feed-post-img"  height="500" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Post title (5 mins read)</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <form action="">
-                        <input type="text" placeholder="Add comment..." class="comment">
-                      </form>
-                      <a href="">Comments</a>
-                      <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
-                    </div>
-                  </div>
-
-                  <div class="card mb-3 my-5">
-                    <div class="card-header">
-                        <h5>@Iseoluwa's Food Blog</h5>
-                    </div>
-                    <img src="images/blog-770x510.png" class="card-img-top" id="feed-post-img"  height="500" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Post title (5 mins read)</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <form action="">
-                        <input type="text" placeholder="Add comment..." class="comment">
-                      </form>
-                      <a href="">Comments</a>
-                      <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
-                    </div>
-                  </div>
-
-                  <div class="card mb-3 my-5">
-                    <div class="card-header">
-                        <h5>@Iseoluwa's Food Blog</h5>
-                    </div>
-                    <img src="images/blog-770x510.png" class="card-img-top" id="feed-post-img"  height="500" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Post title (5 mins read)</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <form action="">
-                        <input type="text" placeholder="Add comment..." class="comment">
-                      </form>
-                      <a href="">Comments</a>
-                      <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
-                    </div>
-                  </div>
-
-                  <div class="card mb-3 my-5">
-                    <div class="card-header">
-                        <h5>@Iseoluwa's Food Blog</h5>
-                    </div>
-                    <img src="images/blog-770x510.png" class="card-img-top" id="feed-post-img"  height="500" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Post title (5 mins read)</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <form action="">
-                        <input type="text" placeholder="Add comment..." class="comment">
-                      </form>
-                      <a href="">Comments</a>
-                      <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
-                    </div>
-                  </div>
 
                   
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-6">
+                      <div class="card mb-3 my-3" id="post-feed-card">
+                        <div class="card-header">
+                            <h5>@Iseoluwa's Food Blog</h5>
+                        </div>
+                        <a href="">
+                          <img src="images/blog-770x510.png" class="card-img-top" id="feed-post-img" height="200" alt="...">
+                        </a>                    
+                        <div class="card-body">
+                          <h5 class="card-title">Post title (5 mins read)</h5>  
+                          <a href="" class="comment-link text-secondary">Read by 1200 people</a>
+                          <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-6">
+                      <div class="card mb-3 my-3" id="post-feed-card">
+                        <div class="card-header">
+                            <h5>@Iseoluwa's Food Blog</h5>
+                        </div>
+                        <a href="">
+                          <img src="images/blog-770x510.png" class="card-img-top" id="feed-post-img" height="200" alt="...">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title">Post title (5 mins read)</h5>
+                          <a href="" class="comment-link text-secondary">Read by 1200 people</a>
+                          <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-6">
+                      <div class="card mb-3 my-3" id="post-feed-card">
+                        <div class="card-header">
+                            <h5>@Iseoluwa's Food Blog</h5>
+                        </div>
+                        <a href="">
+                          <img src="images/blog-770x510.png" class="card-img-top" id="feed-post-img"  height="200" alt="...">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title">Post title (5 mins read)</h5>                 
+                          <a href="" class="comment-link text-secondary">Read by 1200 people</a>
+                          <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-6">
+                      <div class="card mb-3 my-3" id="post-feed-card">
+                        <div class="card-header">
+                            <h5>@Iseoluwa's Food Blog</h5>
+                        </div>
+                        <a href="">
+                          <img src="images/blog-770x510.png" class="card-img-top" id="feed-post-img"  height="200" alt="...">
+                        </a>                     
+                        <div class="card-body">
+                          <h5 class="card-title">Post title (5 mins read)</h5>
+                          <a href="" class="comment-link text-secondary">Read by 1200 people</a>
+                          <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
             </div>
 
 
@@ -521,9 +444,9 @@
 
 
 
-            <div class="col-lg-3 d-none d-md-none d-lg-none d-xl-block" id="suggested">
-                <h1 class="text-center">Suggested</h1>
-                <div class="card my-5 ms-5" style="width: 350px;">
+            <div class="col-lg-3 d-none d-md-none d-lg-none d-xl-block" id="col">
+                <h5 class="text-center">Suggested</h5>
+                <div class="card my-3" style="width: 250px;" id="suggest-card">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-3">
@@ -533,7 +456,7 @@
                                 <h5>@Iseoluwa's Food Blog</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <h6>2000 Subscribers</h6>
-                                <a href="#" class="btn btn-dark">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <a href="#" class="btn btn-sm btn-dark" id="suggest-button">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                                   </svg></a>
                             </div>
@@ -541,7 +464,7 @@
                     </div>
                   </div>
 
-                  <div class="card my-5 ms-5" style="width: 350px;">
+                  <div class="card my-3" style="width: 250px;" id="suggest-card">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-3">
@@ -551,7 +474,7 @@
                                 <h5>@Naija Politics</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <h6>200 Subscribers</h6>
-                                <a href="#" class="btn btn-dark">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <a href="#" class="btn btn-sm btn-dark">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                                   </svg></a>
                             </div>
@@ -559,7 +482,7 @@
                     </div>
                   </div>
 
-                  <div class="card my-5 ms-5" style="width: 350px;">
+                  <div class="card my-3" style="width: 250px;" id="suggest-card">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-3">
@@ -569,7 +492,7 @@
                                 <h5>@Soccer Land</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <h6>92.3k Subscribers</h6>
-                                <a href="#" class="btn btn-dark">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <a href="#" class="btn btn-sm btn-dark">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                                   </svg></a>
                             </div>
@@ -577,7 +500,7 @@
                     </div>
                   </div>
 
-                  <div class="card my-5 ms-5" style="width: 350px;">
+                  <div class="card my-3" style="width: 250px;" id="suggest-card">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-3">
@@ -587,7 +510,7 @@
                                 <h5>@E-news</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <h6>1.4m Subscribers</h6>
-                                <a href="#" class="btn btn-dark">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <a href="#" class="btn btn-sm btn-dark">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                                   </svg></a>
                             </div>
@@ -595,7 +518,7 @@
                     </div>
                   </div>
 
-                  <div class="card my-5 ms-5" style="width: 350px;">
+                  <div class="card my-3" style="width: 250px;" id="suggest-card">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-3">
@@ -605,7 +528,7 @@
                                 <h5>@Marvel Lovers</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <h6>25.6k Subscribers</h6>
-                                <a href="#" class="btn btn-dark">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <a href="#" class="btn btn-sm btn-dark">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                                   </svg></a>
                             </div>
@@ -614,24 +537,15 @@
                   </div>
                   <hr>
                   <div id="fixedElement">
-                    <h3 class="text-center pt-5">Top 5 Bloggers of the week</h3>
-                    <div class="card my-5 ms-5" style="width: 350px;">
+                    <h5 class="text-center pt-5">Top 5 Bloggers</h5>
+                    <div class="card my-3" style="width: 250px;" id="suggest-card">
                         <div class="card-body">
-                            <h4><img src="images/link 1.jpg" class="start-post-image" alt="" width="60" height="60" srcset=""> @Ise's Food Blog</h4>
-                            <h4><img src="images/link 1.jpg" class="start-post-image" alt="" width="60" height="60" srcset="">@Marvel Dorm</h4>
-                            <h4><img src="images/link 1.jpg" class="start-post-image" alt="" width="60" height="60" srcset="">@Sport Analyst</h4>
-                            <h4><img src="images/link 1.jpg" class="start-post-image" alt="" width="60" height="60" srcset="">@Movies hub</h4>
-                            <h4><img src="images/link 1.jpg" class="start-post-image" alt="" width="60" height="60" srcset="">@Fashion Star</h4>
+                            <h6><img src="images/link 1.jpg" class="start-post-image" alt="" width="60" height="60" srcset=""> @Ise's Food Blog</h6>
+                            <h6><img src="images/link 1.jpg" class="start-post-image" alt="" width="60" height="60" srcset="">@Marvel Dorm</h6>
+                            <h6><img src="images/link 1.jpg" class="start-post-image" alt="" width="60" height="60" srcset="">@Sport Analyst</h6>
+                            <h6><img src="images/link 1.jpg" class="start-post-image" alt="" width="60" height="60" srcset="">@Movies hub</h6>
+                            <h6><img src="images/link 1.jpg" class="start-post-image" alt="" width="60" height="60" srcset="">@Fashion Star</h6>
                         </div>
-                      </div>
-                      <div class="others ms-5">
-                        <p>
-                          <a href="" class="others-link me-2">About</a>
-                          <a href="" class="others-link me-2">Advertisements</a>
-                          <a href="" class="others-link me-2">Terms</a>
-                          <a href="" class="others-link me-2">Help Center</a>
-                          <a href="" class="others-link me-2">Ad choices</a>
-                        </p>
                       </div>
                   </div>
             </div>

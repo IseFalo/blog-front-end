@@ -9,52 +9,240 @@
     <link rel="stylesheet" href="profile-page.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Bloggin</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <form class="d-flex search" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                </svg></button>
-              </form>
-            <ul class="navbar-nav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bloggin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <form class="d-flex search" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></button>
+          </form>
+        <ul class="navbar-nav">
+
+        <li class="nav-item">
+            <a class="nav-link active btn btn-primary" aria-current="page" href="#">Home</a>
+        </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+
+          <li class="nav-item text-center">
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Notifications</a>
+          </li>
+          <li class="nav-item text-center">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+              </a>              
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Advertisements</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Terms</a></li>
+                <li><a class="dropdown-item" href="#">Help Center</a></li>
+                <li><a class="dropdown-item" href="#">Ad choices</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">Logout</a></li>
+              </ul>
+            </div>
+            
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
 
 
 
-              <li class="nav-item text-center">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active btn btn-primary" aria-current="page" href="#">Profile</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link" href="#">Notification</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link">Settings</a>
-              </li>
-            </ul>
+<!-- Modal -->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Are you sure you want to logout?</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-sm btn-primary">Logout</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+
+
+
+
+
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h3 class="offcanvas-title" id="offcanvasExampleLabel">Notifications</h3>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <h4>Today</h4>
+        <div>
+          <div class="row">
+            <div class="col-2">
+              <img src="images/link 1.jpg" class="start-post-image" alt="" width="50" height="50" srcset="">
+            </div>
+            <div class="col-10 justify-content-start">
+              <p><a href="">Iseoluwa's Food Blog</a> just comment "This is such a good write up"  <span>7h</span></p>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-2">
+              <img src="images/link 1.jpg" class="start-post-image" alt="" width="50" height="50" srcset="">
+            </div>
+            <div class="col-10 justify-content-start">
+              <p><a href="">Iseoluwa's Food Blog</a> just comment "This is such a good write up" <span>7h</span></p>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-2">
+              <img src="images/link 1.jpg" class="start-post-image" alt="" width="50" height="50" srcset="">
+            </div>
+            <div class="col-10 justify-content-start">
+              <p><a href="">Iseoluwa's Food Blog</a> just comment "This is such a good write up" <span>7h</span></p>
+            </div>
+          </div>    
+        </div>
+        <hr>
+  
+        <h4>This Week</h4>
+        <div>
+          <div class="row">
+            <div class="col-2">
+              <img src="images/link 1.jpg" class="start-post-image" alt="" width="50" height="50" srcset="">
+            </div>
+            <div class="col-10 justify-content-start">
+              <p><a href="">Iseoluwa's Food Blog</a> just comment "This is such a good write up" <span>7h</span></p>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-2">
+              <img src="images/link 1.jpg" class="start-post-image" alt="" width="50" height="50" srcset="">
+            </div>
+            <div class="col-10 justify-content-start">
+              <p><a href="">Iseoluwa's Food Blog</a> just comment "This is such a good write up" <span>7h</span></p>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-2">
+              <img src="images/link 1.jpg" class="start-post-image" alt="" width="50" height="50" srcset="">
+            </div>
+            <div class="col-10 justify-content-start">
+              <p><a href="">Iseoluwa's Food Blog</a> just comment "This is such a good write up" <span>7h</span></p>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-2">
+              <img src="images/link 1.jpg" class="start-post-image" alt="" width="50" height="50" srcset="">
+            </div>
+            <div class="col-10 justify-content-start">
+              <p><a href="">Iseoluwa's Food Blog</a> just comment "This is such a good write up" <span>7h</span></p>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-2">
+              <img src="images/link 1.jpg" class="start-post-image" alt="" width="50" height="50" srcset="">
+            </div>
+            <div class="col-10 justify-content-start">
+              <p><a href="">Iseoluwa's Food Blog</a> just comment "This is such a good write up" <span>7h</span></p>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-2">
+              <img src="images/link 1.jpg" class="start-post-image" alt="" width="50" height="50" srcset="">
+            </div>
+            <div class="col-10 justify-content-start">
+              <p><a href="">Iseoluwa's Food Blog</a> just comment "This is such a good write up" <span>7h</span></p>
+            </div>
           </div>
         </div>
-      </nav>
+        <hr>
+  
+        <div>
+          <h4>This Month</h4>
+                        <div class="row">
+            <div class="col-2">
+              <img src="images/link 1.jpg" class="start-post-image" alt="" width="50" height="50" srcset="">
+            </div>
+            <div class="col-10 justify-content-start">
+              <p><a href="">Iseoluwa's Food Blog</a> just comment "This is such a good write up" <span>7h</span></p>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-2">
+              <img src="images/link 1.jpg" class="start-post-image" alt="" width="50" height="50" srcset="">
+            </div>
+            <div class="col-10 justify-content-start">
+              <p><a href="">Iseoluwa's Food Blog</a> just comment "This is such a good write up" <span>7h</span></p>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-2">
+              <img src="images/link 1.jpg" class="start-post-image" alt="" width="50" height="50" srcset="">
+            </div>
+            <div class="col-10 justify-content-start">
+              <p><a href="">Iseoluwa's Food Blog</a> just comment "This is such a good write up" <span>7h</span></p>
+            </div>
+          </div>
+        </div>
+  
+  
+      </div>
+  
+  
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid  navbar-header justify-content-center">
           <div class="profile-info py-5 justify-content-center text-center">
-            <img src="images/link 1.jpg" alt="" width="150" height="150" id="profile-image">
-            <h1 class="navbar-brand mb-0 second-brand">Iseoluwa's Food Blog</h1>
-            <button class="btn btn-outline-dark px-5" type="submit">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <img src="images/link 1.jpg" alt="" width="100" height="100" id="profile-image">
+            <h3 class="navbar-brand mb-0 second-brand">Iseoluwa's Food Blog</h3>
+            <button class="btn btn-sm btn-outline-dark px-5" type="submit">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
             </svg></button>
-            <h1 class="navbar-brand mb-3 second-brand">25.5k Subscribers</h1>
+            <h3 class="navbar-brand mb-3 second-brand">25.5k Subscribers</h3>
             <div class="bio text-center">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quam tempora a harum aliquam expedita, non quisquam porro, nesciunt reprehenderit eum vitae odit corporis in impedit sapiente rerum voluptates nostrum beatae excepturi ipsa aut similique. Possimus, earum odio eligendi delectus recusandae tenetur unde placeat distinctio, quod reprehenderit obcaecati nihil reiciendis.</p>
             </div>
@@ -64,12 +252,23 @@
       
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
   <div class="container my-5">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
@@ -79,9 +278,12 @@
           </div>
           <div class="col-lg-6  d-flex align-items-center px-5" id="captions">
             <div class="captions">
-              <h3 class="text-muted">Editor's Pick 1</h3>
-              <h2>How men cook</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, esse!</p>
+              <h4 class="text-muted">Editor's Pick 1</h4>
+              <h3>How men cook</h3>
+              <p>Read by 2m people</p>
+              <button class="btn btn-sm btn-outline-dark" type="submit">View Post</button>
+              <p>Posted 30 mins ago and edited 2 mins ago</p>
+              <p>5 mins read</p>
             </div>
           </div>
         </div>
@@ -94,9 +296,12 @@
           </div>
           <div class="col-lg-6  d-flex align-items-center px-5" id="captions">
             <div class="captions">
-              <h3 class="text-muted">Editor's Pick 2</h3>
-              <h2>Topic Name</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, incidunt!</p>
+              <h4 class="text-muted">Editor's Pick 2</h4>
+              <h3>Topic Name</h3>
+              <p>Read by 4000 people</p>
+              <button class="btn btn-sm btn-outline-dark" type="submit">View Post</button>
+              <p>Posted 30 mins ago and edited 2 mins ago</p>
+              <p>5 mins read</p>
             </div>
           </div>
         </div>       
@@ -108,9 +313,12 @@
         </div>
         <div class="col-lg-6  d-flex align-items-center px-5" id="captions">
           <div class="captions">
-            <h3 class="text-muted">Editor's Pick 3</h3>
-            <h2>Topic Name</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, obcaecati?</p>
+            <h4 class="text-muted">Editor's Pick 3</h4>
+            <h3>Topic Name</h3>
+            <p>Read by 300 people</p>
+            <button class="btn btn-sm btn-outline-dark" type="submit">View Post</button>
+            <p>Posted 30 mins ago and edited 2 mins ago</p>
+            <p>5 mins read</p>
           </div>
         </div>
        </div>
@@ -127,7 +335,11 @@
   </div>
   </div>
 
-
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
 
 
 
@@ -135,14 +347,14 @@
   <div class="container" id="posts-container">
     <hr>
     <h1 class="text-center posts">Posts</h1>
-    <div class="card text-center mb-5">
+    <div class="card text-center" id="start-post-card">
       <div class="card-header">
-        <h5>Create Post</h5>
+          <h5>Create Post</h5>
       </div>
       <div class="card-body">
-          <a href="">
+          <a href="" data-bs-toggle="modal"  data-bs-target="#exampleModalToggle" href="#exampleModalToggle" role="button">
               <form action="">
-                  <img src="images/link 1.jpg" class="start-post-image" alt="" width="80" height="80" srcset="">
+                  <img src="images/link 1.jpg" class="start-post-image" alt="" srcset="">
                   <input type="text" class="start-post" placeholder="Start a Post">
               </form>
           </a>
@@ -150,73 +362,144 @@
     </div>
 
 
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Create Post</h5>
+            <button type="button" class="btn-close" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="post-form">
+              <input type="text" class="post-title my-3" name="post-title" placeholder="Post title">
+              <label for="post-cover-image">Add post cover:</label>
+              <input type="file" name="post-cover-image" accept="image/*">
+              <textarea name="" class="post-text-area my-3" placeholder="Talk about something..."></textarea>
+            </div>
+            </form>  
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal">Add Post</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">End Creating</h5>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to close?
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Go back</button>
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">Post Confirm</h5>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to post this?
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Go back</button>
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
 
     <form class="d-flex search" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search Iseoluwa's Profile here..." aria-label="Search">
-      <button class="btn btn-outline-dark" type="submit">Search</button>
+      <input class="form-control me-2 mt-3" type="search" placeholder="Search Profile..." aria-label="Search">
+      <button class="btn btn-outline-dark mt-3" type="submit">Search</button>
     </form>
   
     <div class="row">
-      <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card">
-          <img src="images/book.jpg" alt="" class="card-img-top" height="250" srcset="">
+      <div class="col-12 col-md-6 col-lg-3 my-4">
+        <div class="card" id="profile-post-cards">
+          <img src="images/book.jpg" alt="" class="card-img-top" height="150" srcset="">
           <div class="card-body">
-            <h5 class="card-title">A nice design</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate magnam nisi voluptate tempora.</p>
-            <button class="btn btn-outline-dark" type="submit">Read more</button>
+            <h6 class="card-title">A nice design</h6>
+            <p class="card-text">Read by 1.5m people</p>
+            <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
+            <button class="btn btn-sm btn-outline-dark" type="submit">View Post</button>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card">
-          <img src="images/img1.jpg" alt="" class="card-img-top" height="250" srcset="">
+      <div class="col-12 col-md-6 col-lg-3 my-4">
+        <div class="card" id="profile-post-cards">
+          <img src="images/img1.jpg" alt="" class="card-img-top" height="150" srcset="">
           <div class="card-body">
-            <h5 class="card-title">A nice design</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate magnam nisi voluptate tempora.</p>
-            <button class="btn btn-outline-dark" type="submit">Read more</button>
+            <h6 class="card-title">A nice design</h6>
+            <p class="card-text">Read by 1.5m people</p>
+            <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
+            <button class="btn btn-sm btn-outline-dark" type="submit">View Post</button>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card">
-          <img src="images/img2.jpg" alt="" class="card-img-top" height="250" srcset="">
+      <div class="col-12 col-md-6 col-lg-3 my-4">
+        <div class="card" id="profile-post-cards">
+          <img src="images/img2.jpg" alt="" class="card-img-top" height="150" srcset="">
           <div class="card-body">
-            <h5 class="card-title">A nice design</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate magnam nisi voluptate tempora.</p>
-            <button class="btn btn-outline-dark" type="submit">Read more</button>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card">
-          <img src="images/img2.jpg" alt="" class="card-img-top" height="250" srcset="">
-          <div class="card-body">
-            <h5 class="card-title">A nice design</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate magnam nisi voluptate tempora.</p>
-            <button class="btn btn-outline-dark" type="submit">Read more</button>
+            <h6 class="card-title">A nice design</h6>
+            <p class="card-text">Read by 1.5m people</p>
+            <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
+            <button class="btn btn-sm btn-outline-dark" type="submit">View Post</button>
           </div>
         </div>
       </div>
   
-      <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card">
-          <img src="images/no image.jpeg" alt="" class="card-img-top" height="250" srcset="">
+      <div class="col-12 col-md-6 col-lg-3 my-4">
+        <div class="card" id="profile-post-cards">
+          <img src="images/img2.jpg" alt="" class="card-img-top" height="150" srcset="">
           <div class="card-body">
-            <h5 class="card-title">A nice design</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate magnam nisi voluptate tempora.</p>
-            <button class="btn btn-outline-dark" type="submit">Read more</button>
+            <h6 class="card-title">A nice design</h6>
+            <p class="card-text">Read by 1.5m people</p>
+            <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
+            <button class="btn btn-sm btn-outline-dark" type="submit">View Post</button>
           </div>
         </div>
       </div>
   
-      <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card">
-          <img src="images/no image.jpeg" alt="" class="card-img-top" height="250" srcset="">
+      <div class="col-12 col-md-6 col-lg-3 my-4">
+        <div class="card" id="profile-post-cards">
+          <img src="images/no image.jpeg" alt="" class="card-img-top" height="150" srcset="">
           <div class="card-body">
-            <h5 class="card-title">A nice design</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate magnam nisi voluptate tempora.</p>
-            <button class="btn btn-outline-dark" type="submit">Read more</button>
+            <h6 class="card-title">A nice design</h6>
+            <p class="card-text">Read by 1.5m people</p>
+            <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
+            <button class="btn btn-sm btn-outline-dark" type="submit">View Post</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-12 col-md-6 col-lg-3 my-4">
+        <div class="card" id="profile-post-cards">
+          <img src="images/no image.jpeg" alt="" class="card-img-top" height="150" srcset="">
+          <div class="card-body">
+            <h6 class="card-title">A nice design</h6>
+            <p class="card-text">Read by 1.5m people</p>
+            <p class="card-text"><small class="text-muted">Posted 10 mins ago and edited 5 mins ago</small></p>
+            <button class="btn btn-sm btn-outline-dark" type="submit">View Post</button>
           </div>
         </div>
       </div>
@@ -224,7 +507,7 @@
   
   
   
-      <button class="btn btn-outline-dark" id="view-all" type="submit">View all Posts</button>
+      <button class="btn btn-sm btn-outline-dark" id="view-all" type="submit">View all Posts</button>
       
     </div>
     
