@@ -1,9 +1,11 @@
-
+.dropdown-toggle::after{
+    display: none;
+}
 .nav-item{
     margin-left: 70px;
 }
 .nav-link{
-    font-size: 12px;
+    font-size: 15px;
 }
 .profile-info{
     justify-content: center;

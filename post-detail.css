@@ -4,12 +4,14 @@ hr {
     border: 0;
     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
-
+.dropdown-toggle::after{
+    display: none;
+}
 .nav-item{
     margin-left: 70px;
 }
 .nav-link{
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .comment-form{
@@ -87,22 +89,7 @@ hr {
     .search{
         margin-top: 10px;
     }
-    .carousel{
-        height: 100%;
-        border-radius: 9px;
-    }
-    .carousel-item{
-        width: 100%;
-        height: 70vh;
-    }
-    #caro-img{
-        width: 100%;
-        height: 35vh;
-    }
-    #captions{
-        background: #cfd1d4;
-        height: 35vh;
-    }
+
 }
 @media only screen and (min-width:769px) and (max-width:992px) {
     .nav-item{
@@ -113,44 +100,8 @@ hr {
     .search{
         margin-top: 10px;
     }
-    .carousel{
-        height: 100%;
-    
-    }
-    .carousel-item{
-        width: 100%;
-        height: 60vh;
-    }
-    .carousel-item{
-        width: 100%;
-        height: 60vh;
-    }
-    #caro-img{
-        width: 100%;
-        height: 30vh;
-        
-    }
-    #captions{
-        background: #cfd1d4;
-        height: 30vh;
-    }
-    .email{
-        width: 200px;
-        height: 60px;
-    }
 }
 
 @media only screen and (min-width:993px) and (max-width:1200px){
-    .carousel{
-        height: 40vh;
-    
-    }
-    .carousel-item{
-        width: 100%;
-        height: 40vh;
-    }
-    .carousel-item{
-        width: 100%;
-        height: 40vh;
-    }
+
 }
